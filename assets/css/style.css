@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: coral;
+}
+
+header {
+  padding: 10px 35px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+header h1 {
+  font-weight: bold;
+  color: black;
+  margin: 0;
+  font-size: 36px;
+}
+header a {
+  text-decoration: none;
+  color: black;
+}
+
+header nav {
+  margin: 7px 0;
+}
+
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+header nav ul li a {
+  margin: 0 30px;
+  font-weight: lighter;
+  font-size: 1.55vw;
+}
+
+.hero {
+  background-image: url("../images/hi.jpg");
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.section-title {
+  font-size: 55px;
+  border-bottom: 3px solid;
+  color: coral;
+  padding-bottom: 10px;
+  text-align: center;
+  margin: 0 auto 35px auto;
+  width: 50%;
+}
+
+.primary-border {
+  border-color: black;
+}
+
+.intro p {
+  line-height: 1.7;
+  color: coral;
+  width: 80%;
+  margin: 0 auto;
+  font-size: 20px;
+  text-align: center;
+}
+
+.flex-row {
+  display: flex;
+  justify-content: space-between;
+}
+.intro div a {
+  display: flex;
+  justify-content: center;
+}
