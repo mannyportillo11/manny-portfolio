@@ -2,12 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: coral;
+  background-color: black;
 }
 
 header {
-  padding: 10px 35px;
-  background-color: rgb(255, 255, 255);
+  padding: 10px 35px 0% 35px;
+  background-color: black;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -15,13 +15,9 @@ header {
 
 header h1 {
   font-weight: bold;
-  color: black;
   margin: 0;
   font-size: 36px;
-}
-header a {
-  text-decoration: none;
-  color: black;
+  color: rgb(255, 255, 255);
 }
 
 header nav {
@@ -37,18 +33,84 @@ header nav ul {
 }
 
 header nav ul li a {
+  color: white;
+  text-decoration: none;
   margin: 0 30px;
   font-weight: lighter;
   font-size: 1.55vw;
 }
 
 .hero {
-  background-image: url("../images/hi.jpg");
+  background-image: url("../images/drums.jpg");
   height: 400px;
   background-size: cover;
   background-position: center;
-  opacity: 0.5;
+  opacity: 0.25;
 }
+
+.section-title {
+  font-size: 55px;
+  border-bottom: 3px solid;
+  border-right: 3px solid;
+  color: white;
+  padding-bottom: 10px;
+  text-align: center;
+  margin: 35px auto 35px auto;
+  width: 50%;
+}
+
+.primary-border {
+  border-color: rgb(6, 71, 6);
+}
+
+.intro p {
+  line-height: 1.7;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  font-size: x-large;
+}
+
+.intro img {
+  border-radius: 50%;
+  margin-top: 50px;
+  opacity: 0.25;
+  width: 50%;
+}
+
+.intro img:hover {
+  opacity: 1;
+}
+
+.intro div a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+.intro div p {
+  font-size: 100px;
+  color: white;
+  font-size: 16px;
+}
+
+.contact {
+  color: white;
+  text-align: center;
+}
+
+.links img {
+  opacity: 1;
+  border-radius: 50px;
+}
+
+.links img:hover {
+  opacity: 0.25;
+}
+
 .center {
   display: block;
   margin-left: auto;
@@ -56,34 +118,35 @@ header nav ul li a {
   width: 50%;
 }
 
-.section-title {
-  font-size: 55px;
-  border-bottom: 3px solid;
-  color: coral;
-  padding-bottom: 10px;
-  text-align: center;
-  margin: 0 auto 35px auto;
-  width: 50%;
+.flex-row-title {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
-
-.primary-border {
-  border-color: black;
-}
-
-.intro p {
-  line-height: 1.7;
-  color: coral;
-  width: 80%;
-  margin: 0 auto;
-  font-size: 20px;
-  text-align: center;
-}
-
 .flex-row {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
-.intro div a {
+
+.apps {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.apps img {
+  height: 200px;
+  width: 200px;
+  align-items: stretch;
+}
+
+.apps p {
+  line-height: 1.7;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  font-size: x-large;
 }
