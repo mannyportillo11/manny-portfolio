@@ -4,50 +4,170 @@
   box-sizing: border-box;
   background-color: black;
 }
-
+/*header functions and format*/
 header {
-  padding: 10px 35px 0% 35px;
-  background-color: black;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-header h1 {
-  font-weight: bold;
-  margin: 0;
-  font-size: 36px;
-  color: rgb(255, 255, 255);
+  margin: 15px 15px;
+  padding: 15px;
+  display: flex; /* flex h1 and nav children elements*/
+  justify-content: space-between; /*pushes space between h1 and nav*/
+  flex-wrap: wrap; /* moves nav onto next line*/
 }
 
 header nav {
   margin: 7px 0;
 }
 
+header h1 {
+  font-weight: bold;
+  margin: 0;
+  font-size: 36px;
+  color: white;
+}
+
+/*navigation bar formatting*/
 header nav ul {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  align-items: center; /*cross axis alignment*/
   list-style: none;
 }
 
 header nav ul li a {
-  color: white;
-  text-decoration: none;
   margin: 0 30px;
   font-weight: lighter;
   font-size: 1.55vw;
+  color: white;
+  text-decoration: none;
 }
 
+/*hero formatting*/
 .hero {
   background-image: url("../images/drums.jpg");
   height: 400px;
   background-size: cover;
   background-position: center;
   opacity: 0.25;
+  background-color: black;
 }
 
+/*center heading text*/
+.bio h2 {
+  text-align: center;
+}
+
+/* make parent container and format text style*/
+.bio-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  color: white;
+  text-align: center;
+  font-size: 24px;
+}
+
+.bio-content p {
+  padding: 5 px;
+}
+
+/*format picture into circle*/
+.bio-content img {
+  border-radius: 50%;
+  margin-top: 50px;
+  opacity: 0.25;
+  width: 50%;
+  margin-bottom: 50px;
+}
+
+/*create fade effect*/
+.bio-content img:hover {
+  opacity: 1;
+}
+
+/*format skills section*/
+.skills h2 {
+  text-align: center;
+}
+
+.skills-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 0x auto;
+}
+
+.logos {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  color: white;
+  flex-flow: column;
+}
+
+.logos img {
+  border-radius: 50%;
+  width: 100px;
+}
+
+.logos p {
+  text-align: center;
+}
+
+/*format links section*/
+.dapp h2 {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: row;
+  justify-content: space-around;
+  text-align: center;
+  align-items: flex-end;
+}
+
+.links article {
+  margin: 15px;
+}
+
+.links article p {
+  font-size: 50px;
+  color: white;
+}
+
+.links article img {
+  opacity: 1;
+  border-radius: 50px;
+  width: 500px;
+}
+
+.links img:hover {
+  opacity: 0.25;
+}
+
+/*Format Contact Me Section*/
+.contact-flex {
+  margin-bottom: 35px;
+}
+.contact-flex h2 {
+  text-align: center;
+}
+
+.address {
+  display: flex;
+  justify-content: space-around;
+
+  flex-direction: column;
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+  text-align: center;
+}
+
+/* mass loaded classes*/
 .section-title {
   font-size: 55px;
   border-bottom: 3px solid;
@@ -63,54 +183,6 @@ header nav ul li a {
   border-color: rgb(6, 71, 6);
 }
 
-.intro p {
-  line-height: 1.7;
-  width: 80%;
-  margin: 0 auto;
-  text-align: center;
-  color: white;
-  font-size: x-large;
-}
-
-.intro img {
-  border-radius: 50%;
-  margin-top: 50px;
-  opacity: 0.25;
-  width: 50%;
-}
-
-.intro img:hover {
-  opacity: 1;
-}
-
-.intro div a {
-  display: flex;
-  justify-content: center;
-  text-decoration: none;
-  color: white;
-  font-size: 16px;
-}
-
-.intro div p {
-  font-size: 100px;
-  color: white;
-  font-size: 16px;
-}
-
-.contact {
-  color: white;
-  text-align: center;
-}
-
-.links img {
-  opacity: 1;
-  border-radius: 50px;
-}
-
-.links img:hover {
-  opacity: 0.25;
-}
-
 .center {
   display: block;
   margin-left: auto;
@@ -118,35 +190,18 @@ header nav ul li a {
   width: 50%;
 }
 
-.flex-row-title {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-.flex-row {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-.apps {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  flex-direction: column;
+/*Resize Heading on Smaller Screen*/
+@media screen and (max-width: 610px) {
+  .section-title {
+    font-size: 35px;
+  }
+  .address {
+    font-size: 20px;
+  }
 }
 
-.apps img {
-  height: 200px;
-  width: 200px;
-  align-items: stretch;
-}
-
-.apps p {
-  line-height: 1.7;
-  width: 80%;
-  margin: 0 auto;
-  text-align: center;
-  color: white;
-  font-size: x-large;
+@media screen and (max-width: 389px) {
+  .section-title {
+    font-size: 20px;
+  }
 }
