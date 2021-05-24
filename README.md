@@ -8,16 +8,16 @@ Creating a portfolio that will exhibit skills and current applications to potent
 
 ### Title, Header, Navigation Bar, and Hero Image
 
-![title,header,nav,hero](https://user-images.githubusercontent.com/83254086/118414721-82f45400-b663-11eb-9885-95853021ed22.JPG)
+![header, nav, hero](https://user-images.githubusercontent.com/83254086/119292187-1d790800-bc0d-11eb-8134-cedf765d274a.JPG)
 
-### First parts of Article and Aside
+### First parts of Body
 
-![article,aside,1](https://user-images.githubusercontent.com/83254086/118415601-8e964980-b668-11eb-8462-b39b87124f61.JPG)
+![body](https://user-images.githubusercontent.com/83254086/119292236-37b2e600-bc0d-11eb-81b6-df84ec18c810.JPG)
 
-### Second parts of Article, Aside, and Footer
+### Second parts of Body and End
 
-![article2,footer](https://user-images.githubusercontent.com/83254086/118415627-b1c0f900-b668-11eb-97ed-64ed73327f6b.JPG)
+![End](https://user-images.githubusercontent.com/83254086/119292284-53b68780-bc0d-11eb-826d-d6529c35f2f8.JPG)
 
 ## **Link to Deployed Application**
 
-Check out the website by clicking here -> [Horiseon](https://mannyportillo11.github.io/horiseon/)
+Check out the website by clicking here -> [Manny Portillo Portfolio](https://mannyportillo11.github.io/myPortfolio/)
