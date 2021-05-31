@@ -2,15 +2,20 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: black;
 }
 /*header functions and format*/
 header {
-  margin: 15px 15px;
+  background-image: url("../images/drums.jpg");
+  background-position: top;
+  background-attachment: fixed; /*rolling affect coupled with hero*/
+  background-position: 25%;
+  margin: 0 0 15px 0;
   padding: 15px;
   display: flex; /* flex h1 and nav children elements*/
   justify-content: space-between; /*pushes space between h1 and nav*/
   flex-wrap: wrap; /* moves nav onto next line*/
+  background-size: cover;
+  width: 100%;
 }
 
 header nav {
@@ -39,21 +44,36 @@ header nav ul li a {
   font-size: 1.55vw;
   color: white;
   text-decoration: none;
+  background-color: black;
+  padding: 5px;
+  border-radius: 10px;
+}
+header nav ul li a:hover {
+  background: white;
+  color: rgb(6, 71, 6);
+  border-radius: 10px;
+  text-shadow: none;
+  margin: 0 30px;
 }
 
 /*hero formatting*/
 .hero {
   background-image: url("../images/drums.jpg");
+  background-attachment: fixed; /*rolling affect coupled with header*/
   height: 400px;
   background-size: cover;
   background-position: center;
-  opacity: 0.25;
-  background-color: black;
+  opacity: 1;
 }
 
+.bio {
+  background-color: black;
+}
 /*center heading text*/
 .bio h2 {
   text-align: center;
+  background-color: black;
+  padding-top: 15px;
 }
 
 /* make parent container and format text style*/
@@ -158,13 +178,12 @@ header nav ul li a {
 
 .address {
   display: flex;
-  justify-content: space-around;
-
   flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
   color: white;
   text-decoration: none;
   font-size: 30px;
-  text-align: center;
 }
 
 /* mass loaded classes*/
