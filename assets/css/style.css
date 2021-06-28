@@ -107,6 +107,7 @@ header nav ul li a:hover {
 /*format skills section*/
 .skills h2 {
   text-align: center;
+  color: rgb(6, 71, 6);
 }
 
 .skills-content {
@@ -133,24 +134,34 @@ header nav ul li a:hover {
   text-align: center;
 }
 
+#deployed-applications{
+  background-color: black;
+}
+
 /*format links section*/
 .dapp h2 {
   text-align: center;
   display: flex;
   flex-wrap: wrap;
+  background-color: black;
+}
+
+.dapp article {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: black;
 }
 
 .links {
+  text-align: center;
+}
+
+.links article {
   display: flex;
   flex-wrap: wrap;
   flex-flow: row;
   justify-content: space-around;
   text-align: center;
-  align-items: flex-end;
-}
-
-.links article {
-  margin: 15px;
 }
 
 .links article p {
@@ -160,15 +171,29 @@ header nav ul li a:hover {
 
 .links article img {
   opacity: 1;
-  border-radius: 50px;
-  width: 500px;
+  width: 310px;
+  height: 100px;
 }
 
 .links img:hover {
   opacity: 0.25;
 }
 
+.mid img {
+opacity: 1;
+height: 100px;
+width: 500px;
+display: flex;
+flex-wrap: wrap;
+flex-flow: row;
+justify-content: space-around;
+text-align: center;
+}
+
 /*Format Contact Me Section*/
+#contact-me {
+  background-color: black;
+}
 .contact-flex {
   margin-bottom: 35px;
 }
