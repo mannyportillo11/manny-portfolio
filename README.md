@@ -20,4 +20,4 @@ Creating a portfolio that will exhibit skills and current applications to potent
 
 ## **Link to Deployed Application**
 
-Check out the website by clicking here -> [Manny Portillo Portfolio](https://mannyportillo11.github.io/myPortfolio/)
+[Manny Portillo Portfolio](https://mannyportillo11.github.io/myPortfolio/)
