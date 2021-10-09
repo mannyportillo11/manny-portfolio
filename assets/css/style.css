@@ -62,6 +62,9 @@ header nav ul li a:hover {
   height: 250px;
   background-size: cover;
   background-position: center;
+  border-style: solid;
+  border-color: white;
+  border-radius: 10px;
 }
 
 /* bio formatting*/
