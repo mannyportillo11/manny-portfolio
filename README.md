@@ -25,4 +25,10 @@ I am creating a portfolio in order to exhibit my proficiency with HTML and CSS. 
 
 ## Links
 
-[Manny Portillo Portfolio](https://mannyportillo11.github.io/myPortfolio/)
+[My Deployed Portfolio](https://mannyportillo11.github.io/manny-portfolio/)
+
+[My Portfolio on Github](https://github.com/mannyportillo11/manny-portfolio)
+
+## Contributors
+
+[Manuel Portillo](https://github.com/mannyportillo11)
