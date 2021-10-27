@@ -1,10 +1,15 @@
-# **My Portfolio**
+# **My First Portfolio**
 
-## **Motivation**
+## Motivation
 
-Creating a portfolio that will exhibit skills and current applications to potential employers.
+I am creating a portfolio in order to exhibit my proficiency with HTML and CSS. My portfolio also provides access to my deloyed applications so that potential employers can view my lastest projects.
 
-## **Screenshots**
+## Tools
+
+- HTML
+- CSS
+
+## Screenshots
 
 ### Title, Header, Navigation Bar, and Hero Image
 
@@ -18,6 +23,6 @@ Creating a portfolio that will exhibit skills and current applications to potent
 
 ![End](https://user-images.githubusercontent.com/83254086/119292284-53b68780-bc0d-11eb-826d-d6529c35f2f8.JPG)
 
-## **Link to Deployed Application**
+## Links
 
 [Manny Portillo Portfolio](https://mannyportillo11.github.io/myPortfolio/)
