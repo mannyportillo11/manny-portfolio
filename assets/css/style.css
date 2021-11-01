@@ -6,28 +6,64 @@
 
 /*HEADER STYLING*/
 header {
-  background-image: url("../images/drums.jpg");
-  background-position: top;
-  background-attachment: fixed; /*rolling affect coupled with hero*/
-  background-position: 25%;
-  margin: 0 0 10px 0;
+  background-color: black;
   padding: 15px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  background-size: cover;
+  justify-content: space-around;
   width: 100%;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
 }
 
 header nav {
   margin: 10px 10px;
 }
 
-header h1 {
+/* The animation code
+@keyframes header-div {
+  0% {
+    background-color: rgb(165, 171, 59);
+    width: 110px;
+    height: 110px;
+    border-radius: ;
+  }
+  25% {
+    background-color: rgb(221, 171, 5);
+    width: 120px;
+    height: 120px;
+    border-radius: 15%;
+  }
+  50% {
+    background-color: rgb(186, 58, 19);
+    width: 130px;
+    height: 130px;
+    border-radius: 35%;
+  }
+  100% {
+    background-color: rgb(255, 60, 0);
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+  }
+}
+
+/* The element to apply the animation to */
+header div {
+  width: 100px;
+  height: 100px;
+  background-color: gray;
+  animation-name: header-div;
+  animation-duration: 8s;
+}
+*/ header h1 {
   font-weight: bold;
   margin: 0;
   font-size: 36px;
   color: white;
+  font-family: Garamond, Baskerville, Baskerville Old Face, Hoefler Text,
+    Times New Roman, serif;
 }
 
 /*NAV BAR STYLING*/
@@ -49,23 +85,35 @@ header nav ul li a {
   border-radius: 2px;
 }
 
+header nav ul li a:focus {
+  background: rgb(6, 71, 6);
+  color: white;
+  border-radius: 3px;
+  margin: 0 30px;
+  font-size: 24px;
+}
+
 header nav ul li a:hover {
-  background: white;
+  background: rgba(255, 255, 255, 0.775);
   color: rgb(6, 71, 6);
-  border-radius: 10px;
-  text-shadow: none;
+  border-radius: 3px;
   margin: 0 30px;
 }
 
 /*HERO FORMATTING*/
 .hero {
-  background-image: url("../images/drums.jpg");
+  background-color: black;
   background-attachment: fixed; /*rolling affect coupled with header*/
-  height: 350px;
+  height: 150px;
   background-size: cover;
   background-position: center;
   width: 100%;
-  margin-bottom: 10px;
+}
+
+.hero h1 {
+  color: white;
+  text-align: center;
+  font-size: 55px;
 }
 
 .hero-form-div {
@@ -73,33 +121,74 @@ header nav ul li a:hover {
 }
 
 form {
-  background-color: rgba(0, 0, 0, 0.66);
+  background-color: rgba(6, 71, 6, 0.898);
   color: white;
-  text-align: center;
-  height: 300px;
+  height: 400px;
   width: 500px;
-  border: solid rgba(187, 76, 11, 0.299);
   border-radius: 3px;
+  padding: 0px 5px 0px 5px;
+  border: solid rgba(255, 255, 255, 0.816);
+  font-size: 24px;
+  margin-left: 50px;
+}
+
+form h2 {
+  text-align: center;
+  font-size: 36px;
+  padding-bottom: 10px;
+}
+
+.form-input {
+  border: 1px solid rgb(6, 71, 6);
+  display: block;
+  padding: 7px 15px;
+  font-size: 16px;
+  color: rgb(6, 71, 6);
+  width: 100%;
+  margin-bottom: 15px;
+  border-radius: 3px;
+}
+
+form button {
   margin: 0px auto 0px auto;
+  display: block;
+  border: solid black;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.646);
+  border-radius: 10px;
+  width: 150px;
+}
+
+form button:hover {
+  margin: 0px auto 0px auto;
+  display: block;
+  border: solid white;
+  color: white;
+  background-color: rgba(0, 0, 0);
+  border-radius: 10px;
+  width: 150px;
 }
 
 /* BIO FORMATTING*/
 .bio {
-  background-color: black;
-  margin-bottom: 10px;
   width: 100%;
+  padding-bottom: 50px;
+  background-color: black;
+  padding-top: 50px;
 }
 
 .bio-title {
   font-size: 55px;
   color: white;
   text-align: center;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0);
   padding-top: 15px;
-  padding-bottom: 15px;
-  border-bottom: white solid;
-  margin: 0px auto 100px auto;
-  width: 600px;
+  border-bottom: white solid 1px;
+  width: 1000px;
+}
+
+.bio-image {
+  margin: 10px auto;
 }
 
 .bio-content {
@@ -114,25 +203,71 @@ form {
 .bio-content p {
   padding: 5 px;
 }
-
-/*format picture into circle*/
-.bio-content img {
-  border-radius: 50%;
-  margin-top: 50px;
-  opacity: 0.25;
-  width: 50%;
-  margin-bottom: 50px;
+.burnt-orange {
+  color: orangered;
 }
 
-/*create fade effect*/
-.bio-content img:hover {
-  opacity: 1;
+.fillerone {
+  background-image: url("../images/24\ \(2\).jpg");
+  height: 5px;
+  margin-top: 3px;
+  margin-left: 100px;
+  margin-right: 100px;
+  color: white;
+  background-attachment: fixed; /*rolling affect coupled with header*/
+  background-position: top;
+  background-size: cover;
 }
 
-/*format skills section*/
-.skills h2 {
+.fillertwo {
+  border-radius: 10px;
+  border: white double;
+  background: rgba(6, 71, 6, 0.898);
+  height: 100px;
+  margin-bottom: 10px;
+  margin-left: 100px;
+  margin-right: 550px;
+  color: white;
+  padding-top: 10px;
+  background-image: url("../images/map.jpg");
+  background-attachment: fixed; /*rolling affect coupled with header*/
+  background-position: 20%;
+}
+
+.fillerthree {
+  border-radius: 10px;
+  border: white double;
+  background: rgba(6, 71, 6, 0.898);
+  height: 100px;
+  margin-bottom: 10px;
+  margin-left: 550px;
+  margin-right: 100px;
+  color: white;
+  padding-top: 30px;
+  background-image: url("../images/map.jpg");
+  background-attachment: fixed; /*rolling affect coupled with header*/
+
+  background-position: top;
+}
+
+/* SKILLS FORMATTING */
+.skills {
+  margin: 10px;
+  border: solid rgb(6, 71, 6);
+}
+
+.skills-title {
+  font-size: 55px;
+  color: black;
   text-align: center;
-  color: rgb(6, 71, 6);
+  background-color: white;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: rgb(6, 71, 6) solid;
+  margin: 0px auto 100px auto;
+  width: 600px;
+  border-radius: 3px;
+  float: right;
 }
 
 .skills-content {
@@ -143,38 +278,69 @@ form {
 }
 
 .logos {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  color: white;
-  flex-flow: column;
-}
-
-.logos img {
-  border-radius: 50%;
-  width: 100px;
+  color: black;
 }
 
 .logos p {
   text-align: center;
+  font-size: 36px;
 }
 
 /*format links section*/
 
-#deployed-applications {
+.dapp {
+  width: 100%;
+  padding-bottom: 50px;
   background-color: black;
+  padding-top: 50px;
 }
 
-.white-font {
-  color: white;
-}
-.dapp h2 {
+.dapp h3 {
   text-align: center;
+}
+
+.dapp a {
+  color: white;
+  text-decoration: none;
+}
+
+.dapp a:hover {
+  text-decoration: none;
+  color: blue;
+}
+
+.dapp a:active {
+  color: white;
+  text-decoration: none;
+}
+
+.dapp-title {
+  color: white;
+  font-size: 55px;
+  color: white;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0);
+  padding-top: 15px;
+  border-bottom: white solid 1px;
+  width: 1000px;
+  margin-bottom: 50px;
+}
+
+.dapparticles {
   background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .dapp article {
   background-color: black;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  color: white;
+  margin: 15px auto;
 }
 
 .links-parent-container {
@@ -201,36 +367,6 @@ form {
   color: white;
 }
 
-/* .mid img {
-opacity: 1;
-height: 250px;
-width: 250px;
-display: flex;
-flex-wrap: wrap;
-flex-flow: row;
-justify-content: space-around;
-text-align: center;
-border-radius: 5%;
-margin-top: 10px;
-margin-bottom: 10px;
-filter: blur(8px);
--webkit-filter: blur(8px);
-}
-
-.bigger img {
-  opacity: 1;
-  height: 300px;
-  width: 300px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-flow: row;
-  justify-content: space-around;
-  text-align: center;
-  border-radius: 5%;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  } */
-
 /*Format Contact Me Section*/
 #contact-me {
   background-color: black;
@@ -253,6 +389,12 @@ filter: blur(8px);
 }
 
 /* mass loaded classes*/
+
+.flex-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .center {
   display: block;
@@ -290,20 +432,4 @@ filter: blur(8px);
   width: 80%;
   padding: 20px;
   text-align: center;
-}
-
-/*Resize Heading on Smaller Screen*/
-@media screen and (max-width: 610px) {
-  .section-title {
-    font-size: 35px;
-  }
-  .address {
-    font-size: 20px;
-  }
-}
-
-@media screen and (max-width: 389px) {
-  .section-title {
-    font-size: 20px;
-  }
 }
